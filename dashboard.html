@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="dashmedia.css">
+    <link rel="stylesheet" href="../../fa-icons/css/all.css">
+    <script src="../../fa-icons/js/all.js"></script>
+    <link rel="stylesheet" href="../../booticons/font/bootstrap-icons.css">
+    <script src="../../bootstrap-5.3.5-dist/js/bootstrap.js"></script>
+    <script src="../../bootstrap-5.3.5-dist/js/jquery-3.7.1.js"></script>
+    <!-- <script src="dashboard.js"></script> -->
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-bars">
+            <input type="checkbox" name="test" id="menu_mobile" checked>
+            <a href="" id="atest">
+                <label for="menu_mobile" id="labeltest">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </a>
+            <div class="aside" id="listemobile">
+                <div class="logo">
+                    <img src="../img/all/logo.png" alt="logo">
+                    Bristo Bliss
+                </div>
+                <div class="user">
+                    <div class="mid">
+                        <div class="initiales"><span>KO</span></div>
+                        <div class="infos">
+                            <span class="big">Kalihl O'NIEL</span>
+                            <span class="small">Food Deliver</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="main-links">
+                        <span class="title">Main Commands</span>
+                        <a href="#dashboard" class="active"><span class="bi bi-menu-up"></span>Dashboard</a>
+                        <a href="#delidetails"><span class="bi bi-car-front-fill"></span>Deliveries Details</a>
+                        <a href="#"><span class="bi bi-geo-alt-fill"></span>City Map</a>
+                        <a href="#"><span class="bi bi-folder-fill"></span>Report</a>
+                    </div>
+                    <div class="secondaries-links">
+                        <span class="title">Quick Actions</span>
+                        <a href="#"><span class="bi bi-bell-fill"></span>Notification</a>
+                        <a href="#"><span class="bi bi-moon-fill"></span>Dark Mode</a>
+                        <a href="#"><span class="bi bi-question-circle-fill"></span>Help / Services</a>
+                    </div>
+                    <div class="others">
+                        <span class="title">Sign In Web-Site</span>
+                        <a href="https://"><span class="bi bi-globe"></span>Bristo-Bliss-Site</a>
+                        <a href="#"><span class="bi bi-box-arrow-right"></span>Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="header">
+                <div class="description">
+                    <span class="span1">Deliver Dashboard</span>
+                    <span class="span2">Here you can consulte your deliveries <br> and check customers locations.</span>
+                </div>
+                <div class="options">
+                    <a href="#"><span class="bi bi-arrow-repeat"></span>Refresh</a>
+                    <a href="#"><span class="bi bi-download"></span>Import</a>
+                    <a href="#"><span class="bi bi-folder-fill"></span>Generate Report</a>
+                </div>
+            </div>
+            <div id="dashboard">
+                <div class="cards">
+                    <div class="trio">
+                        <div class="min-box">
+                            <div class="title">
+                                <span class="text">Monthly Deliveries</span>
+                                <span class="icon"><i class="bi bi-bicycle"></i></span>
+                            </div>
+                            <div class="counter">
+                                <span class="number">204</span>
+                                <span class="unite">Del</span>
+                            </div>
+                        </div>
+                        <div class="min-box">
+                            <div class="title">
+                                <span class="text">Daily Deliveries</span>
+                                <span class="icon"><i class="bi bi-handbag-fill"></i></span>
+                            </div>
+                            <div class="counter">
+                                <span class="number">12</span>
+                                <span class="unite">Del</span>
+                            </div>
+                        </div>
+                        <div class="min-box">
+                            <div class="title">
+                                <span class="text">Deliveries Rest</span>
+                                <span class="icon"><i class="bi bi-boxes"></i></span>
+                            </div>
+                            <div class="counter">
+                                <span class="number">9</span>
+                                <span class="unite">Del</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trio">
+                        <div class="min-box">
+                            <div class="title">
+                                <span class="text">Timer Tracker</span>
+                                <span class="icon"><i class="bi bi-clock-fill"></i></span>
+                            </div>
+                            <div class="counter">
+                                <span class="timer">00:00:00</span>
+                            </div>
+                        </div>
+                        <div class="min-box">
+                            <div class="title">
+                                <span class="text">Delivered</span>
+                                <span class="icon"><i class="bi bi-check-square-fill"></i></span>
+                            </div>
+                            <div class="counter">
+                                <span class="number">3</span>
+                                <span class="unite">Del</span>
+                            </div>
+                        </div>
+                        <div class="min-box">
+                            <div class="title">
+                                <span class="text">Deliveries Speed</span>
+                                <span class="icon"><i class="bi bi-speedometer"></i></span>
+                            </div>
+                            <div class="counter">
+                                <span class="number">0.097</span>
+                                <span class="unite">Del/min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="delidetails">
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6">DELIVERIES DETAILS</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <th>id deliveries</th>
+                            <th>customer name</th>
+                            <th>food name</th>
+                            <th>address</th>
+                            <th>delivery time</th>
+                            <th>Statut</th>
+                        </tr>
+                        <tr>
+                            <td>240825001</td>
+                            <td>Bryanne <i>Simo</i></td>
+                            <td>Aschù</td>
+                            <td>Bonamoussadi</td>
+                            <td>14:45</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>240825002</td>
+                            <td>Daniella <i>Kamguem</i></td>
+                            <td>Ndollè</td>
+                            <td>Akwa</td>
+                            <td>15:00</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>240825003</td>
+                            <td>Honour <i>Behionne</i></td>
+                            <td>Erù</td>
+                            <td>Bonaberi</td>
+                            <td>15:25</td>
+                            <td>On going</td>
+                        </tr>
+                        <tr>
+                            <td>240825004</td>
+                            <td>Raissa <i>Sahanne</i></td>
+                            <td>Ockock</td>
+                            <td>Makeppe</td>
+                            <td>15:50</td>
+                            <td>Unstarted</td>
+                        </tr>
+                        <tr>
+                            <td>240825005</td>
+                            <td>Ahmed <i>Amadou</i></td>
+                            <td>Fried rice and chicken</td>
+                            <td>Deido</td>
+                            <td>16:20</td>
+                            <td>Unstarted</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>

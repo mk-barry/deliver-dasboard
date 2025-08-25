@@ -1,0 +1,195 @@
+@media screen and (max-width: 800px) {
+    .toggle-bars{
+        width: 28%;
+        gap: 0px;
+
+        #atest{
+            display: initial;
+            position: absolute;
+            top: 5px;
+        }
+    }
+
+    /* UNDISPLAY A ASIDE MENU */
+
+    .toggle-bars:has(input:checked){
+        width: 0%;
+        border: 1px solid;
+        #atest{
+            position: absolute;
+            top: 5px;
+            left: 0px;
+        }
+    }
+
+    .toggle-bars:has(input:checked) ~ .main{
+        width: 100%;
+        /* height: 100%; */
+
+        .header{
+            .description{
+                padding-left: 10px;
+                .span1{
+                    font-size: 1.2em;
+                }
+
+                .span2{
+                    font-size: 10px;
+                }
+            }
+        }
+
+        #dashboard{
+            .cards{
+                flex-direction: row;
+
+                .trio{
+                    height: 80%;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    #menu_mobile:checked ~ #listemobile{
+        display: none;
+    }
+
+
+    /* DISPLAY A ASIDE MENU */
+    
+    .aside{
+
+        width: 100%;
+        height: 95%;
+        /* LOGO */
+
+        .logo{
+            align-items: center;
+
+            img{
+                width: 20px;
+                height: 15px;
+            }
+
+
+            font-size: 1em;
+        }
+
+        /* USER */
+
+        .user{
+            .mid{
+                .initiales{
+                    width: 30px;
+                    height: 30px;
+                    font-size: 1em;
+                }
+
+                .infos{
+                    .big{
+                        font-size: 12px;
+                    }
+
+                    .small{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        /* LINKS */
+
+        .main-links{
+            a{
+                font-size: 10px;
+            }
+        }
+
+        .secondaries-links{
+            a{
+                font-size: 10px;
+            }
+        }
+
+        .others{
+            a{
+                font-size: 10px;
+            }
+        }
+    }
+
+    /* MAIN */
+
+    .main{
+        width: 72%;
+
+        .header{
+            gap: 20px;
+            .description{
+                width: 30%;
+                /* height: 100px; */
+                .span1{
+                    font-size: 12px;
+                }
+
+                .span2{
+                    font-size: 8px;
+                }
+            }
+
+            .options{
+                gap: 10px;
+                width: 50%;
+
+                a{
+                    font-size: 8px;
+                    padding: 3px;
+                }
+            }
+        }
+
+        #dashboard{
+            .cards{
+                gap: 20px;
+                .trio{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    height: 50%;
+                    .min-box{
+                        width: 80%;
+                        height: 30%;
+                        gap: 10px;
+                        .title{
+                            .text{
+                                font-size: 12px;
+                                /* width: 75%; */
+                            }   
+
+                            .icon{
+                                font-size: 12px;
+                                /* width: 15%; */
+                            }
+                        }
+
+                        .counter{
+                            .number{
+                                font-size: 12px;
+                            }
+
+                            .unite{
+                                font-size: 12px;
+                            }
+
+                            .timer{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
